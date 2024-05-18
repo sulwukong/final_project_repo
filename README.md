@@ -12,4 +12,4 @@ Other contributors to this program include:
 -YouTube tutorials on how to use Git
 -matplotlib.org information on how to use Python to plot data
 -INST126 lecture slides and example code from course modules
--Pair Programming sessions with classmates
+-Pair Programming sessions with classmates (Kelly Kim, Leanna Seck)
