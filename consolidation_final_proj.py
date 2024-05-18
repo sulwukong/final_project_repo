@@ -51,3 +51,16 @@ while guess_count < 3:
 
 print(f"Your score was {score}")
 
+player_name = input("Enter your name to save your score: ").strip()
+scores[player_name] = score
+with open(score_file, "w") as file:
+    for name, score in scores.items():
+        file.write(f"{name}:{score}\n")
+
+names = list(scores.keys())
+scores_list = list(scores.values())
+plt.bar(names, scores_list)
+plt.xlabel('Player')
+plt.ylabel('Score')
+plt.title('Word Guessing Game Score Graph')
+plt.show()
