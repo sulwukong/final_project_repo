@@ -2,6 +2,15 @@
 
 import os
 import random
+import matplotlib.pyplot as plt
+
+score_file = "score_file.txt"
+scores = {}
+if os.path.exists(score_file):
+    with open(score_file, "r") as file:
+        for line in file:
+            name, score = line.strip().split(":")
+            scores[name] = int(score)
 
 word_bank = ["flexible", "paralyzed", "summit", "profession", "challenge", "entertain", 
              "proclaim", "greeting", "justice", "classify", "button", "appeal", "settlement", "salad",
